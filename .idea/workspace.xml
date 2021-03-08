@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b9d5568-cc61-4cbf-9f4b-4febb2262c68" name="Default Changelist" comment="">
+    <list default="true" id="1b9d5568-cc61-4cbf-9f4b-4febb2262c68" name="Default Changelist" comment="add gitignore">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,6 +11,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1p1rUgR8OSCNb8CyAv5IoryQLBH" />
   <component name="ProjectViewState">
@@ -51,11 +52,34 @@
       <workItem from="1614861809282" duration="26000" />
       <workItem from="1614861979943" duration="21000" />
       <workItem from="1615138139865" duration="1236000" />
-      <workItem from="1615231126855" duration="474000" />
+      <workItem from="1615231126855" duration="674000" />
     </task>
+    <task id="LOCAL-00001" summary="add gitignore">
+      <created>1615231648327</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615231648327</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gitignore" />
   </component>
 </project>
