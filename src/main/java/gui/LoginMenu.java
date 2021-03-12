@@ -5,15 +5,26 @@
  */
 package gui;
 
+import javax.swing.JFrame;
+import models.User;
+
 /**
  *
  * @author arastoo
  */
 public class LoginMenu extends javax.swing.JFrame {
-
+    
+    private JFrame previousFrame;
     /**
      * Creates new form LoginMenu
      */
+    public LoginMenu(JFrame previousFrame) {
+        this.previousFrame = previousFrame;
+        initComponents();
+        
+        
+    
+    }
     public LoginMenu() {
         initComponents();
     }
@@ -90,6 +101,11 @@ public class LoginMenu extends javax.swing.JFrame {
 
         LoginButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         LoginButton.setText("Login");
+        LoginButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LoginButtonActionPerformed(evt);
+            }
+        });
 
         MainMenuButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         MainMenuButton.setText("Go to Main Menu");
@@ -159,8 +175,26 @@ public class LoginMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void MainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainMenuButtonActionPerformed
-        
+        this.dispose();
+       previousFrame.setVisible(true);
     }//GEN-LAST:event_MainMenuButtonActionPerformed
+
+    private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
+        
+        
+        String username = UserNameField.getText();
+					String password = String.valueOf(PasswordField.getPassword());
+					
+					if (!username.isBlank()) {
+						User user = Database.getUserByUsername(username);
+						
+						if (user != null && user.Password.equals(password)) {
+							Dashboard dashboard = new Dashboard();
+							dashboard.setVisible(true);
+        
+        this.dispose();
+         previousFrame.setVisible(true);
+    }//GEN-LAST:event_LoginButtonActionPerformed
 
     /**
      * @param args the command line arguments

@@ -5,6 +5,7 @@
  */
 package gui;
 
+
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import javax.swing.JFrame;
@@ -180,6 +181,7 @@ public class RegisterMenu extends javax.swing.JFrame {
          User user = new User(UserNameField.getText(),PasswordField.getPassword());
          System.out.println(user);
          
+         Database.insertIntoUser(user);
          this.dispose();
          previousFrame.setVisible(true);
     }//GEN-LAST:event_RegisterButtonActionPerformed
