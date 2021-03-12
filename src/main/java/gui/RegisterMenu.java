@@ -53,50 +53,48 @@ public class RegisterMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sea Battle | Register Menu");
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
-        LeftPanel.setBackground(new java.awt.Color(255, 153, 0));
+        LeftPanel.setBackground(new java.awt.Color(0, 255, 255));
         LeftPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 255, 51));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Sea Battle");
 
-        jLabel2.setForeground(new java.awt.Color(51, 255, 255));
-        jLabel2.setText("Developed by Mohammad Hossein Asnavandi and Arastoo Bakhtiari");
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setText("Register Menu ");
 
         javax.swing.GroupLayout LeftPanelLayout = new javax.swing.GroupLayout(LeftPanel);
         LeftPanel.setLayout(LeftPanelLayout);
         LeftPanelLayout.setHorizontalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LeftPanelLayout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
+            .addGroup(LeftPanelLayout.createSequentialGroup()
+                .addGap(92, 92, 92)
                 .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(LeftPanelLayout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(jLabel1))
-                    .addComponent(jLabel2))
-                .addGap(36, 36, 36))
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel1))
+                .addContainerGap(70, Short.MAX_VALUE))
         );
         LeftPanelLayout.setVerticalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(230, 230, 230)
+                .addGap(128, 128, 128)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(56, 56, 56)
                 .addComponent(jLabel2)
-                .addContainerGap(301, Short.MAX_VALUE))
+                .addContainerGap(328, Short.MAX_VALUE))
         );
 
-        RightPanel.setBackground(new java.awt.Color(0, 153, 153));
+        RightPanel.setBackground(new java.awt.Color(51, 51, 255));
         RightPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("UserName");
+        jLabel3.setText("UserName:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("Password");
+        jLabel4.setText("Password:");
 
         RegisterButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         RegisterButton.setText("Register");
@@ -138,13 +136,13 @@ public class RegisterMenu extends javax.swing.JFrame {
             .addGroup(RightPanelLayout.createSequentialGroup()
                 .addGap(66, 66, 66)
                 .addComponent(jLabel3)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(UserNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(34, 34, 34)
+                .addGap(30, 30, 30)
                 .addComponent(jLabel4)
-                .addGap(36, 36, 36)
+                .addGap(18, 18, 18)
                 .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(93, 93, 93)
+                .addGap(122, 122, 122)
                 .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
                 .addComponent(MainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)

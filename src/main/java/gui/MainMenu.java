@@ -30,7 +30,9 @@ public class MainMenu extends javax.swing.JFrame {
 
         LeftPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         RightPanel = new javax.swing.JPanel();
         RegisterButton = new javax.swing.JButton();
         LoginButton = new javax.swing.JButton();
@@ -38,46 +40,61 @@ public class MainMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sea Battle | Main Menu");
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
-        LeftPanel.setBackground(new java.awt.Color(76, 40, 3));
+        LeftPanel.setBackground(new java.awt.Color(0, 0, 255));
+        LeftPanel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         LeftPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(32, 204, 169));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("Sea Battle");
 
-        jLabel2.setForeground(new java.awt.Color(0, 255, 204));
-        jLabel2.setText("Developed by Mohammad Hossein Asnavandi and Arastoo Bakhtiari");
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 204, 51));
+        jLabel3.setText("Developed By:");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
+        jLabel2.setText("Arastoo Bakhtiari");
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
+        jLabel4.setText("Mohammad Hussein Asnavandi");
 
         javax.swing.GroupLayout LeftPanelLayout = new javax.swing.GroupLayout(LeftPanel);
         LeftPanel.setLayout(LeftPanelLayout);
         LeftPanelLayout.setHorizontalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(49, 49, 49)
                 .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(LeftPanelLayout.createSequentialGroup()
-                        .addGap(61, 61, 61)
-                        .addComponent(jLabel1))
-                    .addComponent(jLabel2))
-                .addContainerGap(40, Short.MAX_VALUE))
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
+                .addContainerGap(22, Short.MAX_VALUE))
         );
         LeftPanelLayout.setVerticalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(196, 196, 196)
+                .addGap(163, 163, 163)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(340, Short.MAX_VALUE))
+                .addGap(28, 28, 28)
+                .addComponent(jLabel3)
+                .addGap(27, 27, 27)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel4)
+                .addContainerGap(152, Short.MAX_VALUE))
         );
 
-        RightPanel.setBackground(new java.awt.Color(0, 255, 204));
+        RightPanel.setBackground(new java.awt.Color(255, 255, 0));
         RightPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
+        RegisterButton.setBackground(new java.awt.Color(255, 255, 255));
         RegisterButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        RegisterButton.setForeground(new java.awt.Color(0, 0, 255));
         RegisterButton.setText("Register");
         RegisterButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,6 +103,7 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         LoginButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        LoginButton.setForeground(new java.awt.Color(0, 0, 255));
         LoginButton.setText("Login");
         LoginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +112,7 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         ExitButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ExitButton.setForeground(new java.awt.Color(0, 0, 255));
         ExitButton.setText("Exit");
 
         javax.swing.GroupLayout RightPanelLayout = new javax.swing.GroupLayout(RightPanel);
@@ -113,11 +132,11 @@ public class MainMenu extends javax.swing.JFrame {
             .addGroup(RightPanelLayout.createSequentialGroup()
                 .addGap(104, 104, 104)
                 .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(77, 77, 77)
+                .addGap(84, 84, 84)
                 .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 185, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
                 .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84))
+                .addGap(123, 123, 123))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -197,5 +216,7 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel RightPanel;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

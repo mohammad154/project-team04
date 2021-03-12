@@ -27,9 +27,10 @@ public class LoginMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         LeftPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         RightPanel = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         UserNameField = new javax.swing.JTextField();
@@ -38,55 +39,54 @@ public class LoginMenu extends javax.swing.JFrame {
         LoginButton = new javax.swing.JButton();
         MainMenuButton = new javax.swing.JButton();
 
+        jLabel5.setText("jLabel5");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Sea Battle | Login Menu");
-        setPreferredSize(new java.awt.Dimension(800, 600));
         setResizable(false);
 
-        LeftPanel.setBackground(new java.awt.Color(255, 102, 102));
+        LeftPanel.setBackground(new java.awt.Color(0, 255, 0));
         LeftPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
+        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Sea Battle");
 
-        jLabel2.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel2.setText("Developed by Mohammad Hossein Asnavandi and Arastoo Bakhtiari");
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel6.setText("Login Menu");
 
         javax.swing.GroupLayout LeftPanelLayout = new javax.swing.GroupLayout(LeftPanel);
         LeftPanel.setLayout(LeftPanelLayout);
         LeftPanelLayout.setHorizontalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(LeftPanelLayout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(jLabel1))
-                    .addGroup(LeftPanelLayout.createSequentialGroup()
-                        .addGap(35, 35, 35)
-                        .addComponent(jLabel2)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addGap(101, 101, 101)
+                .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel6))
+                .addContainerGap(113, Short.MAX_VALUE))
         );
         LeftPanelLayout.setVerticalGroup(
             LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(174, 174, 174)
+                .addGap(117, 117, 117)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(357, Short.MAX_VALUE))
+                .addGap(86, 86, 86)
+                .addComponent(jLabel6)
+                .addContainerGap(309, Short.MAX_VALUE))
         );
 
-        RightPanel.setBackground(new java.awt.Color(51, 255, 255));
+        RightPanel.setBackground(new java.awt.Color(102, 0, 51));
         RightPanel.setPreferredSize(new java.awt.Dimension(400, 600));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel3.setText("UserName");
+        jLabel3.setText("UserName:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel4.setText("Password");
+        jLabel4.setText("Password:");
 
         LoginButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         LoginButton.setText("Login");
@@ -129,11 +129,11 @@ public class LoginMenu extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(74, 74, 74)
+                .addGap(105, 105, 105)
                 .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 140, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addComponent(MainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59))
+                .addGap(77, 77, 77))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -205,8 +205,9 @@ public class LoginMenu extends javax.swing.JFrame {
     private javax.swing.JPanel RightPanel;
     private javax.swing.JTextField UserNameField;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
