@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/intellij+all,java,maven
-# Edit at https://www.toptal.com/developers/gitignore?templates=intellij+all,java,maven
+# Created by https://www.toptal.com/developers/gitignore/api/java,intellij+all,maven,netbeans
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,intellij+all,maven,netbeans
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -128,7 +128,16 @@ buildNumber.properties
 .mvn/timing.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
+.flattened-pom.xml
 
+### NetBeans ###
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-
-# End of https://www.toptal.com/developers/gitignore/api/intellij+all,java,maven
+# End of https://www.toptal.com/developers/gitignore/api/java,intellij+all,maven,netbeans

@@ -1,22 +1,28 @@
-  
 package models;
 
 public class User {
-    public String Username;
-    public String Password;
 
-    public User(String Username, String Password) {
-        this.Username = Username;
-        this.Password = Password;
+    public String username;
+    public String password;
+
+    public User(String username , String password) {
+        this.username = username;
+        this.password = password;
     }
-    
-    public User(String Username, char[] Password) {
-        this(Username, String.valueOf(Password));
+    public User(String username , char [] password){
+        this(username , String.valueOf(password));
+
+
     }
+
+
 
     @Override
     public String toString() {
-        return "User{" + "Username=" + Username + ", Password=" + Password + '}';
+        return "User{" +
+                "username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
-    
-    }
+}
+

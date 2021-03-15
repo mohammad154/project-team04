@@ -3,32 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package GUI;
 
-
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-import javax.swing.JFrame;
+import database.DataBase;
 import models.User;
 
 /**
  *
- * @author arastoo
+ * @author mh_asnavandi
  */
 public class RegisterMenu extends javax.swing.JFrame {
-    private JFrame previousFrame;
+
     /**
      * Creates new form RegisterMenu
      */
-    public RegisterMenu(JFrame previousFrame) {
-        this.previousFrame = previousFrame;
+    public RegisterMenu() {
         initComponents();
-        
-        
-    
     }
 
-    private RegisterMenu() {
+    RegisterMenu(MainMenu aThis) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -41,113 +34,149 @@ public class RegisterMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LeftPanel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        RightPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        UserNameField = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        PasswordField = new javax.swing.JPasswordField();
-        RegisterButton = new javax.swing.JButton();
-        MainMenuButton = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+
+        jLabel1.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sea Battle | Register Menu");
         setResizable(false);
 
-        LeftPanel.setBackground(new java.awt.Color(255, 255, 0));
-        LeftPanel.setPreferredSize(new java.awt.Dimension(400, 600));
+        jPanel1.setBackground(new java.awt.Color(204, 0, 0));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel1.setText("Sea Battle");
+        jPanel2.setBackground(new java.awt.Color(0, 0, 255));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel2.setText("Register Menu ");
+        jPanel3.setBackground(new java.awt.Color(255, 255, 0));
 
-        javax.swing.GroupLayout LeftPanelLayout = new javax.swing.GroupLayout(LeftPanel);
-        LeftPanel.setLayout(LeftPanelLayout);
-        LeftPanelLayout.setHorizontalGroup(
-            LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(92, 92, 92)
-                .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addContainerGap(70, Short.MAX_VALUE))
-        );
-        LeftPanelLayout.setVerticalGroup(
-            LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(128, 128, 128)
-                .addComponent(jLabel1)
-                .addGap(56, 56, 56)
-                .addComponent(jLabel2)
-                .addContainerGap(328, Short.MAX_VALUE))
-        );
+        jLabel3.setBackground(new java.awt.Color(0, 0, 204));
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel3.setText("Sea Battle");
 
-        RightPanel.setBackground(new java.awt.Color(51, 51, 255));
-        RightPanel.setPreferredSize(new java.awt.Dimension(400, 600));
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel3.setText("UserName:");
-
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("Password:");
-
-        RegisterButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        RegisterButton.setText("Register");
-        RegisterButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RegisterButtonActionPerformed(evt);
-            }
-        });
-
-        MainMenuButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        MainMenuButton.setText("Go to Main Menu");
-        MainMenuButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                MainMenuButtonActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout RightPanelLayout = new javax.swing.GroupLayout(RightPanel);
-        RightPanel.setLayout(RightPanelLayout);
-        RightPanelLayout.setHorizontalGroup(
-            RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RightPanelLayout.createSequentialGroup()
-                .addGap(65, 65, 65)
-                .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(UserNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightPanelLayout.createSequentialGroup()
-                .addContainerGap(118, Short.MAX_VALUE)
-                .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(MainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(99, 99, 99))
-        );
-        RightPanelLayout.setVerticalGroup(
-            RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RightPanelLayout.createSequentialGroup()
-                .addGap(66, 66, 66)
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(51, 51, 51)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(UserNameField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
+                .addContainerGap(65, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(166, 166, 166)
+                .addComponent(jLabel3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 0));
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel4.setText("User Name:");
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel5.setText("Password:");
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
+        jButton1.setText("Register");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jButton2.setText("Go Back To Main Menu");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(64, 64, 64)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(36, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(350, 350, 350)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel5))
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(357, Short.MAX_VALUE)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(85, 85, 85)))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(27, 27, 27)
                 .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(PasswordField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(122, 122, 122)
-                .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 121, Short.MAX_VALUE)
-                .addComponent(MainMenuButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48))
+                .addGap(97, 97, 97)
+                .addComponent(jLabel5)
+                .addGap(37, 37, 37)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56)
+                .addComponent(jButton1)
+                .addGap(62, 62, 62)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(81, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addGap(116, 116, 116)
+                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(425, Short.MAX_VALUE)))
+        );
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 0));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel2.setText("Register Menu");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(209, 209, 209)
+                .addComponent(jLabel2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(35, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(33, 33, 33)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -155,39 +184,53 @@ public class RegisterMenu extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(LeftPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LeftPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void MainMenuButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MainMenuButtonActionPerformed
-       this.dispose();
-       previousFrame.setVisible(true);
-    }//GEN-LAST:event_MainMenuButtonActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jButton1.addActionListener(
+        
+        e -> { User user = new User(jTextField2.getText( ),jTextField1.getText());
+            System.out.println(user);
+            DataBase.insertIntoUser(user);
 
-    private void RegisterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterButtonActionPerformed
-         User user = new User(UserNameField.getText(),PasswordField.getPassword());
-         System.out.println(user);
-         
-         Database.insertIntoUser(user);
-         this.dispose();
-         previousFrame.setVisible(true);
-    }//GEN-LAST:event_RegisterButtonActionPerformed
 
-    
-         
+
+        }
+        
+        );
+        jButton1.addActionListener(
+        
+        e -> { Register02 register02 = new Register02();
+        this.setVisible(false);
+        register02.setVisible(true);
+        }
+        
+        
+        );
+        
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        jButton2.addActionListener(
+     e -> {MainMenu mainMenu = new MainMenu();
+     this.setVisible(false);
+     mainMenu.setVisible(true);
+     }
+        
+        
+        );
+    }//GEN-LAST:event_jButton2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -224,15 +267,17 @@ public class RegisterMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel LeftPanel;
-    private javax.swing.JButton MainMenuButton;
-    private javax.swing.JPasswordField PasswordField;
-    private javax.swing.JButton RegisterButton;
-    private javax.swing.JPanel RightPanel;
-    private javax.swing.JTextField UserNameField;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 }

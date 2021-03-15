@@ -3,22 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package gui;
+package GUI;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  *
- * @author arastoo
+ * @author mh_asnavandi
  */
-public class MainMenu extends javax.swing.JFrame {
+public class MainMenu extends javax.swing.JFrame implements ActionListener{
+
+    
 
     /**
      * Creates new form MainMenu
      */
-    public MainMenu()  {
-       
+    public MainMenu() {
         initComponents();
     }
-       
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,150 +32,227 @@ public class MainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LeftPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        RightPanel = new javax.swing.JPanel();
-        RegisterButton = new javax.swing.JButton();
-        LoginButton = new javax.swing.JButton();
-        ExitButton = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Sea Battle | Main Menu");
-        setResizable(false);
-
-        LeftPanel.setBackground(new java.awt.Color(0, 0, 255));
-        LeftPanel.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        LeftPanel.setPreferredSize(new java.awt.Dimension(400, 600));
-
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 48)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel1.setText("Sea Battle");
-
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 204, 51));
-        jLabel3.setText("Developed By:");
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel2.setText("Arastoo Bakhtiari");
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 51, 51));
-        jLabel4.setText("Mohammad Hussein Asnavandi");
+        jLabel4.setText("Register");
 
-        javax.swing.GroupLayout LeftPanelLayout = new javax.swing.GroupLayout(LeftPanel);
-        LeftPanel.setLayout(LeftPanelLayout);
-        LeftPanelLayout.setHorizontalGroup(
-            LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addGroup(LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 258, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addContainerGap(22, Short.MAX_VALUE))
+        jLabel1.setText("jLabel1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 0));
+        setResizable(false);
+
+        jPanel6.setBackground(new java.awt.Color(204, 0, 0));
+
+        jPanel5.setBackground(new java.awt.Color(0, 0, 255));
+
+        jPanel7.setBackground(new java.awt.Color(255, 255, 0));
+
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel5.setText("Sea Battle");
+
+        jLabel6.setBackground(new java.awt.Color(0, 0, 255));
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jLabel6.setText("MainMenu");
+
+        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
+        jPanel7.setLayout(jPanel7Layout);
+        jPanel7Layout.setHorizontalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel7Layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel6)))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
-        LeftPanelLayout.setVerticalGroup(
-            LeftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(LeftPanelLayout.createSequentialGroup()
-                .addGap(163, 163, 163)
-                .addComponent(jLabel1)
+        jPanel7Layout.setVerticalGroup(
+            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(72, 72, 72)
+                .addComponent(jLabel5)
+                .addGap(68, 68, 68)
+                .addComponent(jLabel6)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jButton1.setText("Login");
+        jButton1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jButton1FocusLost(evt);
+            }
+        });
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jButton2.setText("Register");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
+        jButton3.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        jButton3.setText("Exit");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 195, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(78, 78, 78))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(99, 99, 99)
+                .addComponent(jButton1)
+                .addGap(43, 43, 43)
+                .addComponent(jButton2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(87, 87, 87))
+        );
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel2.setText("In The Name Of God");
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        jLabel3.setText("Developed By:Arastoo Bakhtiari and Mohammad Hussein Asnavandi");
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel7.setText("All right reserved 2021");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(303, 303, 303)
+                        .addComponent(jLabel7)))
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addContainerGap(45, Short.MAX_VALUE)
+                .addComponent(jLabel2)
                 .addGap(28, 28, 28)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
-                .addGap(27, 27, 27)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jLabel4)
-                .addContainerGap(152, Short.MAX_VALUE))
-        );
-
-        RightPanel.setBackground(new java.awt.Color(255, 255, 0));
-        RightPanel.setPreferredSize(new java.awt.Dimension(400, 600));
-
-        RegisterButton.setBackground(new java.awt.Color(255, 255, 255));
-        RegisterButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        RegisterButton.setForeground(new java.awt.Color(0, 0, 255));
-        RegisterButton.setText("Register");
-        RegisterButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                RegisterButtonActionPerformed(evt);
-            }
-        });
-
-        LoginButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        LoginButton.setForeground(new java.awt.Color(0, 0, 255));
-        LoginButton.setText("Login");
-        LoginButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LoginButtonActionPerformed(evt);
-            }
-        });
-
-        ExitButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        ExitButton.setForeground(new java.awt.Color(0, 0, 255));
-        ExitButton.setText("Exit");
-
-        javax.swing.GroupLayout RightPanelLayout = new javax.swing.GroupLayout(RightPanel);
-        RightPanel.setLayout(RightPanelLayout);
-        RightPanelLayout.setHorizontalGroup(
-            RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightPanelLayout.createSequentialGroup()
-                .addContainerGap(104, Short.MAX_VALUE)
-                .addGroup(RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(96, 96, 96))
-        );
-        RightPanelLayout.setVerticalGroup(
-            RightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(RightPanelLayout.createSequentialGroup()
-                .addGap(104, 104, 104)
-                .addComponent(RegisterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(84, 84, 84)
-                .addComponent(LoginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
-                .addComponent(ExitButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(123, 123, 123))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel7)
+                .addGap(7, 7, 7))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(LeftPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(RightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(LeftPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(RightPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void RegisterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegisterButtonActionPerformed
-        RegisterMenu registerMenu = new RegisterMenu(this);
-        this.setVisible(false);
-        registerMenu.setVisible(true);
-    }//GEN-LAST:event_RegisterButtonActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        System.out.println("cliked on register menu");
+        jButton2.addActionListener( 
+          
+               e -> { RegisterMenu registerMenu = new RegisterMenu();
+               this.setVisible(false);
+               registerMenu.setVisible(true);
+               
+               
+               
+          
+        
+               }   
+               
+        );
+               
+    }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButtonActionPerformed
-        LoginMenu loginMenu = new LoginMenu();
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        System.out.println("Clicked On login button");
+        ActionListener LoginMenu = null;
+        jButton1.addActionListener( e -> { LoginMenu loginMenu = new LoginMenu();
+               this.setVisible(false);
+               loginMenu.setVisible(true);
+               });
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jButton1FocusLost
+        System.out.println("Clicked on exit button");
+    }//GEN-LAST:event_jButton1FocusLost
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        jButton3.addActionListener( e ->{
+        MainMenu mainMenu = new MainMenu();
         this.setVisible(false);
-        loginMenu.setVisible(true);
-    }//GEN-LAST:event_LoginButtonActionPerformed
+        mainMenu.setVisible(false);});
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -209,14 +290,38 @@ public class MainMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ExitButton;
-    private javax.swing.JPanel LeftPanel;
-    private javax.swing.JButton LoginButton;
-    private javax.swing.JButton RegisterButton;
-    private javax.swing.JPanel RightPanel;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
     // End of variables declaration//GEN-END:variables
-}
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+ private void LoginButtonActionPerformed(java.awt.event.ActionEvent evt) {                                            
+        LoginMenu loginMenu = new LoginMenu();
+        this.setVisible(false);
+        loginMenu.setVisible(true);
+        
+ }
+ private void RegisterButtonActionPerformed(java.awt.event.ActionEvent evt) {                                               
+        RegisterMenu registerMenu = new RegisterMenu(this);
+        this.setVisible(false);
+        registerMenu.setVisible(true);
+    }}                                                                                           
+
+
+    

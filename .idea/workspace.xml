@@ -4,44 +4,81 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a8b4b7-3a90-45b9-97ff-5d05a3a5fc06" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4589b122-dbad-4a49-ad89-b600e8680dc2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1pYiq9gWhkYZTwxj1FQEgKiUl72" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1phcsvjXMJMO60V6KoYDCcoVKMb" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-<<<<<<< HEAD
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-=======
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.23.jar" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.23 (1).jar" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
->>>>>>> 16ba9c84d0ff8db296d3b52c25a19f45933e8f7f
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
-    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.MainMenu" />
+  <component name="RunManager" selected="Application.LoginMenu">
+    <configuration name="DashBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.DashBoard" />
       <module name="SeaBattle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.*" />
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.LoginMenu" />
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.MainMenu" />
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PauseMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.PauseMenu" />
+      <module name="SeaBattle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,22 +99,27 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoginMenu" />
         <item itemvalue="Application.MainMenu" />
+        <item itemvalue="Application.DashBoard" />
+        <item itemvalue="Application.PauseMenu" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="01a8b4b7-3a90-45b9-97ff-5d05a3a5fc06" name="Default Changelist" comment="" />
-      <created>1615366618606</created>
+      <changelist id="4589b122-dbad-4a49-ad89-b600e8680dc2" name="Default Changelist" comment="" />
+      <created>1615638973841</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1615366618606</updated>
-      <workItem from="1615553588749" duration="21000" />
-      <workItem from="1615553854330" duration="864000" />
-      <workItem from="1615563396274" duration="239000" />
-      <workItem from="1615567474571" duration="123000" />
+      <updated>1615638973841</updated>
+      <workItem from="1615638974972" duration="1229000" />
+      <workItem from="1615657410999" duration="2691000" />
+      <workItem from="1615694897643" duration="3712000" />
+      <workItem from="1615708359670" duration="3295000" />
+      <workItem from="1615744585536" duration="2435000" />
+      <workItem from="1615791859870" duration="14040000" />
     </task>
     <servers />
   </component>
