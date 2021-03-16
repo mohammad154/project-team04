@@ -159,7 +159,7 @@ public class PauseMenu extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         jButton3.addActionListener(
         
-        e ->{DashBoard dashBoard = new DashBoard();
+        e ->{Dashboard dashBoard = new Dashboard();
         this.setVisible(false);
         dashBoard.setVisible(true);
         }
