@@ -2,7 +2,7 @@
 package database;
 
 //import com.mysql.cj.protocol.Resultset;
-import config.DataBaseConfig;
+import config.databaseConfig;
 import models.User;
 
 import java.sql.*;
@@ -12,7 +12,7 @@ public class DataBase {
     public static Connection connection = null;
     static {
         try {
-            connection = DriverManager.getConnection(DataBaseConfig.Connection_URL, DataBaseConfig.UserName, DataBaseConfig.Password);
+            connection = DriverManager.getConnection(databaseConfig.Connection_URL, databaseConfig.UserName, databaseConfig.Password);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
@@ -21,7 +21,7 @@ public class DataBase {
 
 
     public  DataBase() throws SQLException {
-            Connection connection = DriverManager.getConnection(DataBaseConfig.Connection_URL, DataBaseConfig.UserName, DataBaseConfig.Password);
+            Connection connection = DriverManager.getConnection(databaseConfig.Connection_URL, databaseConfig.UserName, databaseConfig.Password);
         }
         public static ArrayList<models.User> selectAllUses () {
             try {

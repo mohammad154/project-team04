@@ -207,7 +207,7 @@ public class LoginMenu extends javax.swing.JFrame {
                     if (!username.isBlank()) {
                         User user = DataBase.getUserByUsername(username);
                         if (user != null && user.password.equals(password)) {
-                            DashBoard dashboard = new DashBoard();
+                            Dashboard dashboard = new Dashboard();
                             this.setVisible(false);
                             dashboard.setVisible(true);
 
