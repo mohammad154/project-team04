@@ -103,9 +103,9 @@ public class Setting02 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         jButton1.addActionListener(
-            e ->  { MainMenu mainMenu = new MainMenu();
+            e ->  { Dashboard dashboard = new Dashboard();
                 this.setVisible(false);
-                mainMenu.setVisible(true);
+                dashboard.setVisible(true);
             }
 
         );

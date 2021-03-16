@@ -182,9 +182,9 @@ public class Dashboard extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
        jButton3.addActionListener( 
-               e -> { Settings settings = new Settings();
+               e -> { Setting02 settings02 = new Setting02();
                this.setVisible(false);
-               settings.setVisible(true);
+               settings02.setVisible(true);
                }
        
        
