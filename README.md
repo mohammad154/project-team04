@@ -6,9 +6,10 @@
 + Arastoo Bakhtiari 992023004
 ## Teacher Assistant :
 + Bijan Eisapor
----
+
  This project developed in Apache netbeans for graphical user interface(GUI) and intellij IDEA for other codes
  and we use MySQL Workbench 8.0 CE for authentication System.
+ --
  # Run project
  For run this project on your system after clone that
  
