@@ -14,7 +14,7 @@
  
  First Download MySQL connector java
  
- to download this click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar)
+ to download that you can  click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar)
  
  2.Open intellij IDEA
  
