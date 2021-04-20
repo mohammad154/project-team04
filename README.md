@@ -30,4 +30,5 @@
 
  8.Click on OK  
 
+Then enjoy game
 
