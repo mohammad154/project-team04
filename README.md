@@ -1,4 +1,4 @@
-# project-team04
+# project-team04 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 team members:
 + Mohammad Hussein Asnavandi 992023001
@@ -8,5 +8,5 @@ team members:
 
 ---
 ## Sea Battle
-lorem 
+
 
