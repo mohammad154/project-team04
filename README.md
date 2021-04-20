@@ -3,5 +3,6 @@
 ## Team Members:
 + Mohammad Hussein Asnavandi 992023001
 + Arastoo Bakhtiari 992023004
-## Teacher Assistant : Bijan Eisapor
+## Teacher Assistant :
+Bijan Eisapor
 Click [here](https://github.com/BijanKHU) to see his page
