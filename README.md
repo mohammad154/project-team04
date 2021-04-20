@@ -2,10 +2,10 @@
 ## Sea Battle
 ![all text](https://games.lol/wp-content/uploads/2021/01/naval-warfare-simulations.jpg)
 ## Team Members:
-+ Mohammad Hussein Asnavandi 992023001
-+ Arastoo Bakhtiari 992023004
++ [Mohammad Hussein Asnavandi](https://github.com/mhas1381) 992023001
++ [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004
 ## Teacher Assistant :
-+ Bijan Eisapor
++ [Bijan Eisapor](https://github.com/BijanKHU)
 ## The tools used to build this project :
 + Apache net beans (for making graphical user interface)
 + intellij IDEA 
