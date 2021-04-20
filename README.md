@@ -13,8 +13,14 @@
  For run this project on your system after clone that
  
  First Download MySQL connector java
+ 
  to download this click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar)
- then open intellij IDEA -->File-->Project Strcture-->libraries-->click on plus(+)
- then select jar file which you downloaded
-
+ 
+ 2.Open intellij IDEA
+ 3.Click on File
+ 4.Project Structor
+ 5.libraries
+ 6.Click on + point
+ 7.add MySQL  connector java.jar
+ 8.Click on OK  
 
