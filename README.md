@@ -6,5 +6,6 @@
 + Arastoo Bakhtiari 992023004
 ## Teacher Assistant :
 + Bijan Eisapor
+## This project developed in Apache netbeans for graghical user interface(GUI) and intellij IDEA for coding
 
 
