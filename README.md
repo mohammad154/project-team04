@@ -15,19 +15,19 @@
  # Run project
  For run this project on your system after clone that
  
- First Download MySQL connector java
+ 1. Download MySQL connector java
  
- to download that you can  click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar)
+ (to download that you can  click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar))
  
  2.Open intellij IDEA
  
- 3.Click on File
+ 3.Click on File icon
 
  4.Project Structor
 
  5.libraries
 
- 6.Click on + point
+ 6.Click on (+) point
 
  7.add MySQL  connector java.jar
 
