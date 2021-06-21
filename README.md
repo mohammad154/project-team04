@@ -2,8 +2,9 @@
 ## Sea Battle
 ![all text](https://games.lol/wp-content/uploads/2021/01/naval-warfare-simulations.jpg)
 ## Team Members:
++ [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004(Leader)
 + [Mohammad Hussein Asnavandi](https://github.com/mhas1381) 992023001
-+ [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004
+
 ## Teacher Assistant :
 + [Bijan Eisapor](https://github.com/BijanKHU)
 ## The tools used to build this project :
