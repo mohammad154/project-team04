@@ -15,7 +15,7 @@
  # Run project
  For run this project on your system after clone that
  
- 1. Download MySQL connector java
+ 1.Download MySQL connector java
  
  (to download that you can  click [here](https://search.maven.org/artifact/mysql/mysql-connector-java/8.0.24/jar))
  
