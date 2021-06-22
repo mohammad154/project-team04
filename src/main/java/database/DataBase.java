@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 import models.User;
 
-public class Database {
+public class DataBase {
     public static Connection connection = null;
 
     static {

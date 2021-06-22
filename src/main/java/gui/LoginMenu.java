@@ -1,6 +1,6 @@
 package gui;
 
-import database.Database;
+import database.DataBase;
 
 import javax.swing.*;
 
@@ -37,7 +37,7 @@ public class LoginMenu extends javax.swing.JFrame {
                     String password = String.valueOf(PasswordField.getPassword());
 
                     if (!username.isBlank()) {
-                        User user = Database.getUserByUsername(username);
+                        User user = DataBase.getUserByUsername(username);
 
                         if (user != null && user.password.equals(password)) {
                             Dashboard dashboard = new Dashboard(MAIN_MENU_FRAME, username);
