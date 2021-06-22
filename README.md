@@ -1,6 +1,6 @@
 # project-team04 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Sea Battle
-![all text](https://drive.google.com/file/d/16bVYGSXrA4AE4rVomUHgR4oJDLTgcHSS/view?usp=sharing)
+![all text](<a href="https://uupload.ir/view/screenshot_(85)_ctx4.png" target="_blank"><img src="https://s4.uupload.ir/files/screenshot_(85)_ctx4_thumb.png" border="0" alt="آپلود عکس" /></a>)
 ## Team Members:
 + [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004 (Leader)
 + [Mohammad Hussein Asnavandi](https://github.com/mhas1381) 992023001
