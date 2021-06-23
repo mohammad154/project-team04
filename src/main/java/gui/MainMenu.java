@@ -1,10 +1,9 @@
 package gui;
 
-import java.io.IOException;
-import javax.imageio.ImageIO;
 import javax.swing.*;
 
 public class MainMenu extends javax.swing.JFrame {
+
     public MainMenu() {
         super("Sea Battle | Main Menu");
 

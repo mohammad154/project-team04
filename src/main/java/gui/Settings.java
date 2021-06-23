@@ -5,6 +5,7 @@ import javax.swing.*;
 import utils.GuiUtils;
 
 public class Settings extends javax.swing.JFrame {
+
     private final JFrame MAIN_MENU_FRAME;
 
     public Settings(JFrame mainMenuFrame) {

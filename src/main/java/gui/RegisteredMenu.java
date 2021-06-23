@@ -5,6 +5,7 @@ import javax.swing.*;
 import utils.GuiUtils;
 
 public class RegisteredMenu extends javax.swing.JFrame {
+
     private final JFrame MAIN_MENU_FRAME;
 
     public RegisteredMenu(JFrame mainMenuFrame) {

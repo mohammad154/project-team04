@@ -8,6 +8,7 @@ import models.User;
 import utils.GuiUtils;
 
 public class LoginMenu extends javax.swing.JFrame {
+
     private final JFrame MAIN_MENU_FRAME;
 
     public LoginMenu(JFrame mainMenuFrame) {
@@ -181,7 +182,6 @@ public class LoginMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton GoBackToMainMenuButton;

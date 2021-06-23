@@ -120,9 +120,6 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="44" green="3d" red="26" type="rgb"/>
             </Property>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\arastoo\Pictures\NavalBattle\03.jpg"/>
-            </Property>
           </Properties>
         </Component>
       </SubComponents>

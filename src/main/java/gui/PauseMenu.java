@@ -1,8 +1,7 @@
 package gui;
 
-import javax.swing.*;
-
 public class PauseMenu extends javax.swing.JFrame {
+
     public PauseMenu() {
         initComponents();
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -11,6 +10,7 @@ public class PauseMenu extends javax.swing.JFrame {
             }
         });
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -84,11 +84,6 @@ public class PauseMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * @param args the command line arguments
-     */
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton GoToDashboardButton;

@@ -8,6 +8,7 @@ import models.User;
 import utils.GuiUtils;
 
 public class RegisterMenu extends javax.swing.JFrame {
+
     private final JFrame MAIN_MENU_FRAME;
 
     public RegisterMenu(JFrame mainMenuFrame) {
@@ -36,7 +37,6 @@ public class RegisterMenu extends javax.swing.JFrame {
                 }
         );
     }
-
 
     private void initWindowListeners() {
         GuiUtils.addWindowClosingListener(this, e -> closeWindow());

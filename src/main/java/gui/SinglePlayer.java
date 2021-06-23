@@ -2,14 +2,13 @@ package gui;
 
 import java.awt.Color;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Random;
 import javax.swing.*;
 
 public class SinglePlayer extends javax.swing.JFrame {
+
     JLabel example;
     JPanel[] panel = new JPanel[100];
     int p = 0;
@@ -51,8 +50,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                     i = rand.nextInt(10);
                     j = rand.nextInt(9) + 1;
                     for (int l = j - 1; l <= j; l++) {
-                        if (label2[i][l].getBackground() == Color.red)
+                        if (label2[i][l].getBackground() == Color.red) {
                             f++;
+                        }
                     }
                     if (f == 0) {
                         for (int l = j - 1; l <= j; l++) {
@@ -64,8 +64,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                     i = rand.nextInt(9);
                     j = rand.nextInt(10);
                     for (int l = i; l <= i + 1; l++) {
-                        if (label2[l][j].getBackground() == Color.red)
+                        if (label2[l][j].getBackground() == Color.red) {
                             f++;
+                        }
                     }
                     if (f == 0) {
                         for (int l = i; l <= i + 1; l++) {
@@ -85,8 +86,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                     i = rand.nextInt(10);
                     j = rand.nextInt(8) + 2;
                     for (int l = j - 2; l <= j; l++) {
-                        if (label2[i][l].getBackground() == Color.red)
+                        if (label2[i][l].getBackground() == Color.red) {
                             f++;
+                        }
                     }
                     if (f == 0) {
                         for (int l = j - 2; l <= j; l++) {
@@ -98,8 +100,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                     i = rand.nextInt(8);
                     j = rand.nextInt(10);
                     for (int l = i; l <= i + 2; l++) {
-                        if (label2[l][j].getBackground() == Color.red)
+                        if (label2[l][j].getBackground() == Color.red) {
                             f++;
+                        }
                     }
                     if (f == 0) {
                         for (int l = i; l <= i + 2; l++) {
@@ -118,8 +121,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                 i = rand.nextInt(10);
                 j = rand.nextInt(7) + 3;
                 for (int k = j - 3; k <= j; k++) {
-                    if (label2[i][k].getBackground() == Color.red)
+                    if (label2[i][k].getBackground() == Color.red) {
                         f++;
+                    }
                 }
                 if (f == 0) {
                     for (int k = j - 3; k <= j; k++) {
@@ -131,8 +135,9 @@ public class SinglePlayer extends javax.swing.JFrame {
                 i = rand.nextInt(7);
                 j = rand.nextInt(10);
                 for (int k = i; k <= i + 3; k++) {
-                    if (label2[k][j].getBackground() != Color.red)
+                    if (label2[k][j].getBackground() != Color.red) {
                         f++;
+                    }
                 }
                 if (f == 0) {
                     for (int k = i; k <= i + 3; k++) {
@@ -183,8 +188,9 @@ public class SinglePlayer extends javax.swing.JFrame {
             for (int k = i - 1; k < i + 1; k++) {
                 for (int l = j - 1; l <= j + 1; l++) {
                     if (k != 10 && k != -1 && l != 10 && l != -1) {
-                        if (label[k][l].getText() != "")
+                        if (label[k][l].getText() != "") {
                             n++;
+                        }
                     }
                 }
             }
@@ -209,8 +215,9 @@ public class SinglePlayer extends javax.swing.JFrame {
             for (int k = i - 1; k < i + 1; k++) {
                 for (int l = j - 1; l <= j + 1; l++) {
                     if (k != 10 && k != -1 && l != 10 && l != -1) {
-                        if (label[k][l].getText() != "")
+                        if (label[k][l].getText() != "") {
                             n++;
+                        }
                     }
                 }
                 if (n == 0) {
@@ -235,8 +242,9 @@ public class SinglePlayer extends javax.swing.JFrame {
             for (int k = i - 1; k < i + 1; k++) {
                 for (int l = j - 1; l <= j + 1; l++) {
                     if (k != 10 && k != -1 && l != 10 && l != -1) {
-                        if (label[k][l].getText() != "")
+                        if (label[k][l].getText() != "") {
                             n++;
+                        }
                     }
                 }
             }
@@ -261,8 +269,9 @@ public class SinglePlayer extends javax.swing.JFrame {
             for (int k = i - 1; k < i + 1; k++) {
                 for (int l = j - 1; l <= j + 1; l++) {
                     if (k != 10 && k != -1 && l != 10 && l != -1) {
-                        if (label[k][l].getText() != "")
+                        if (label[k][l].getText() != "") {
                             n++;
+                        }
                     }
                 }
             }
@@ -286,8 +295,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (C3Combo.getSelectedItem() == "Amudi") {
             if (i <= 8 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 1; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 1; k >= i; k--) {
@@ -305,8 +315,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (C3Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 1 && i <= 9 && i >= 0) {
                 for (int k = j - 1; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 1; k <= j; k++) {
@@ -331,8 +342,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (C2Combo.getSelectedItem() == "Amudi") {
             if (i <= 8 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 1; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 1; k >= i; k--) {
@@ -350,8 +362,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (C2Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 1 && i <= 9 && i >= 0) {
                 for (int k = j - 1; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 1; k <= j; k++) {
@@ -376,8 +389,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (C1Combo.getSelectedItem() == "Amudi") {
             if (i <= 8 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 1; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 1; k >= i; k--) {
@@ -395,8 +409,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (C1Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 1 && i <= 9 && i >= 0) {
                 for (int k = j - 1; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 1; k <= j; k++) {
@@ -421,8 +436,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (B2Combo.getSelectedItem() == "Amudi") {
             if (i <= 7 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 2; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 2; k >= i; k--) {
@@ -440,8 +456,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (B2Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 2 && i <= 9 && i >= 0) {
                 for (int k = j - 2; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 2; k <= j; k++) {
@@ -466,8 +483,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (B1Combo.getSelectedItem() == "Amudi") {
             if (i <= 7 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 2; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 2; k >= i; k--) {
@@ -485,8 +503,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (B1Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 2 && i <= 9 && i >= 0) {
                 for (int k = j - 2; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 2; k <= j; k++) {
@@ -511,8 +530,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         if (A1Combo.getSelectedItem() == "Amudi") {
             if (i <= 6 && i >= 0 && j <= 9 && j >= 0) {
                 for (int k = i + 3; k >= i; k--) {
-                    if (label[k][j].getText() != "")
+                    if (label[k][j].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = i + 3; k >= i; k--) {
@@ -530,8 +550,9 @@ public class SinglePlayer extends javax.swing.JFrame {
         } else if (A1Combo.getSelectedItem() == "Ofoqi") {
             if (j <= 9 && j >= 3 && i <= 9 && i >= 0) {
                 for (int k = j - 3; k <= j; k++) {
-                    if (label[i][k].getText() != "")
+                    if (label[i][k].getText() != "") {
                         n++;
+                    }
                 }
                 if (n == 0) {
                     for (int k = j - 3; k <= j; k++) {
@@ -643,7 +664,6 @@ public class SinglePlayer extends javax.swing.JFrame {
             x = 280;
         }
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -1161,11 +1181,6 @@ public class SinglePlayer extends javax.swing.JFrame {
         setOpo();
     }//GEN-LAST:event_StartButtonActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton A1Button;
     private javax.swing.JComboBox<String> A1Combo;
@@ -1219,6 +1234,5 @@ public class SinglePlayer extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
-
 
 }
