@@ -2,8 +2,8 @@
 ## Sea Battle
    ![all text](https://s4.uupload.ir/files/screenshot_(85)_ctx4.png)
 ## Team Members:
-+ [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004 (Leader)
-+ [Mohammad Hussein Asnavandi](https://github.com/mhas1381) 992023001
++ [Mohammad Hussein Asnavandi](https://github.com/mhas1381) 992023001 (Leader)
++ [Arastoo Bakhtiari](https://github.com/ArastooBakhtiari) 992023004 
 
 ## Teacher Assistant :
 + [Bijan Eisapor](https://github.com/BijanKHU)
